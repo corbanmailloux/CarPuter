@@ -6,28 +6,43 @@ import ioio.lib.util.BaseIOIOLooper;
 import ioio.lib.util.IOIOLooper;
 import ioio.lib.util.android.IOIOActivity;
 import android.content.Context;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.SeekBar;
 import android.widget.Toast;
+
+import com.larswerkman.holocolorpicker.ColorPicker;
+import com.larswerkman.holocolorpicker.ColorPicker.OnColorChangedListener;
+import com.larswerkman.holocolorpicker.SVBar;
 
 public class MainActivity extends IOIOActivity {
 
-	private SeekBar redBar;
-	private SeekBar greenBar;
-	private SeekBar blueBar;
+	private ColorPicker colorPicker;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 
-		redBar = (SeekBar) findViewById(R.id.redBar);
-		greenBar = (SeekBar) findViewById(R.id.greenBar);
-		blueBar = (SeekBar) findViewById(R.id.blueBar);
+		colorPicker = (ColorPicker) findViewById(R.id.colorPicker);
+		colorPicker.addSVBar((SVBar) findViewById(R.id.svbar));
+		
+		colorPicker.setOldCenterColor(invertColorKeepOpacity(colorPicker.getColor()));
+		colorPicker.setOnColorChangedListener(new OnColorChangedListener() {
+
+			@Override
+			public void onColorChanged(int color) {
+				// container.setBackgroundColor(color);
+				colorPicker.setOldCenterColor(invertColorKeepOpacity(color));
+			}
+		});
 	}
 
+	private int invertColorKeepOpacity(int color) {
+		return ((~color) | (color & 0xFF000000));
+	}
+	
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 
@@ -47,7 +62,7 @@ public class MainActivity extends IOIOActivity {
 		}
 		return super.onOptionsItemSelected(item);
 	}
-	
+
 	/**
 	 * This is the thread on which all the IOIO activity happens. It will be run
 	 * every time the application is resumed and aborted when it is paused. The
@@ -60,15 +75,14 @@ public class MainActivity extends IOIOActivity {
 		private PwmOutput redLed;
 		private PwmOutput greenLed;
 		private PwmOutput blueLed;
-		
 
 		/**
 		 * Called every time a connection with IOIO has been established.
 		 * Typically used to open pins.
-		 *
+		 * 
 		 * @throws ConnectionLostException
 		 *             When IOIO connection is lost.
-		 *
+		 * 
 		 * @see ioio.lib.util.IOIOLooper#setup()
 		 */
 		@Override
@@ -81,44 +95,43 @@ public class MainActivity extends IOIOActivity {
 
 		/**
 		 * Called repetitively while the IOIO is connected.
-		 *
+		 * 
 		 * @throws ConnectionLostException
 		 *             When IOIO connection is lost.
 		 * @throws InterruptedException
-		 * 				When the IOIO thread has been interrupted.
-		 *
+		 *             When the IOIO thread has been interrupted.
+		 * 
 		 * @see ioio.lib.util.IOIOLooper#loop()
 		 */
 		@Override
 		public void loop() throws ConnectionLostException, InterruptedException {
-			redLed.setDutyCycle(((float)redBar.getProgress()) / redBar.getMax());
-			greenLed.setDutyCycle(((float)greenBar.getProgress()) / greenBar.getMax());
-			blueLed.setDutyCycle(((float)blueBar.getProgress()) / blueBar.getMax());
+			redLed.setDutyCycle(Color.red(colorPicker.getColor()) / 255f);
+			greenLed.setDutyCycle(Color.green(colorPicker.getColor()) / 255f);
+			blueLed.setDutyCycle(Color.blue(colorPicker.getColor()) / 255f);
 			Thread.sleep(20);
 		}
 
-		
 		/**
 		 * Called when the IOIO is disconnected.
-		 *
+		 * 
 		 * @see ioio.lib.util.IOIOLooper#disconnected()
 		 */
 		@Override
 		public void disconnected() {
 			toast("IOIO disconnected");
 		}
-}
+	}
 
 	/**
 	 * A method to create our IOIO thread.
-	 *
+	 * 
 	 * @see ioio.lib.util.AbstractIOIOActivity#createIOIOThread()
 	 */
 	@Override
 	protected IOIOLooper createIOIOLooper() {
 		return new Looper();
 	}
-	
+
 	private void toast(final String message) {
 		final Context context = this;
 		runOnUiThread(new Runnable() {

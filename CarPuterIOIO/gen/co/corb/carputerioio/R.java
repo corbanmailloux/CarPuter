@@ -9,6 +9,114 @@ package co.corb.carputerioio;
 
 public final class R {
     public static final class attr {
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int bar_length=0x7f010007;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int bar_orientation_horizontal=0x7f01000a;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int bar_pointer_halo_radius=0x7f010009;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int bar_pointer_radius=0x7f010008;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int bar_thickness=0x7f010006;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int color_center_halo_radius=0x7f010003;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int color_center_radius=0x7f010002;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int color_pointer_halo_radius=0x7f010005;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int color_pointer_radius=0x7f010004;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int color_wheel_radius=0x7f010000;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int color_wheel_thickness=0x7f010001;
     }
     public static final class dimen {
         /**  Default screen margins, per the Android Design guidelines. 
@@ -18,18 +126,31 @@ public final class R {
          would include 7" and 10" devices in landscape (~960dp and ~1280dp respectively).
     
          */
-        public static final int activity_horizontal_margin=0x7f050000;
-        public static final int activity_vertical_margin=0x7f050001;
+        public static final int activity_horizontal_margin=0x7f05000a;
+        public static final int activity_vertical_margin=0x7f05000b;
+        public static final int bar_length=0x7f050007;
+        public static final int bar_pointer_halo_radius=0x7f050009;
+        public static final int bar_pointer_radius=0x7f050008;
+        /**  Standart dimens for the bars 
+         */
+        public static final int bar_thickness=0x7f050006;
+        public static final int color_center_halo_radius=0x7f050002;
+        public static final int color_center_radius=0x7f050003;
+        public static final int color_pointer_halo_radius=0x7f050004;
+        public static final int color_pointer_radius=0x7f050005;
+        /**  Standart dimens for the color wheel 
+         */
+        public static final int color_wheel_radius=0x7f050000;
+        public static final int color_wheel_thickness=0x7f050001;
     }
     public static final class drawable {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int action_settings=0x7f090004;
-        public static final int blueBar=0x7f090003;
+        public static final int action_settings=0x7f090003;
+        public static final int colorPicker=0x7f090001;
         public static final int container=0x7f090000;
-        public static final int greenBar=0x7f090002;
-        public static final int redBar=0x7f090001;
+        public static final int svbar=0x7f090002;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
@@ -40,6 +161,7 @@ public final class R {
     public static final class string {
         public static final int action_settings=0x7f060002;
         public static final int app_name=0x7f060000;
+        public static final int color_picker=0x7f060006;
         public static final int hello_world=0x7f060001;
         public static final int ioio_connected=0x7f060004;
         public static final int togglebutton=0x7f060005;
@@ -76,4 +198,226 @@ public final class R {
     public static final class xml {
         public static final int device_filter=0x7f040000;
     }
+    public static final class styleable {
+        /** Attributes that can be used with a ColorBars.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #ColorBars_bar_length co.corb.carputerioio:bar_length}</code></td><td></td></tr>
+           <tr><td><code>{@link #ColorBars_bar_orientation_horizontal co.corb.carputerioio:bar_orientation_horizontal}</code></td><td></td></tr>
+           <tr><td><code>{@link #ColorBars_bar_pointer_halo_radius co.corb.carputerioio:bar_pointer_halo_radius}</code></td><td></td></tr>
+           <tr><td><code>{@link #ColorBars_bar_pointer_radius co.corb.carputerioio:bar_pointer_radius}</code></td><td></td></tr>
+           <tr><td><code>{@link #ColorBars_bar_thickness co.corb.carputerioio:bar_thickness}</code></td><td></td></tr>
+           </table>
+           @see #ColorBars_bar_length
+           @see #ColorBars_bar_orientation_horizontal
+           @see #ColorBars_bar_pointer_halo_radius
+           @see #ColorBars_bar_pointer_radius
+           @see #ColorBars_bar_thickness
+         */
+        public static final int[] ColorBars = {
+            0x7f010006, 0x7f010007, 0x7f010008, 0x7f010009,
+            0x7f01000a
+        };
+        /**
+          <p>This symbol is the offset where the {@link co.corb.carputerioio.R.attr#bar_length}
+          attribute's value can be found in the {@link #ColorBars} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name co.corb.carputerioio:bar_length
+        */
+        public static final int ColorBars_bar_length = 1;
+        /**
+          <p>This symbol is the offset where the {@link co.corb.carputerioio.R.attr#bar_orientation_horizontal}
+          attribute's value can be found in the {@link #ColorBars} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name co.corb.carputerioio:bar_orientation_horizontal
+        */
+        public static final int ColorBars_bar_orientation_horizontal = 4;
+        /**
+          <p>This symbol is the offset where the {@link co.corb.carputerioio.R.attr#bar_pointer_halo_radius}
+          attribute's value can be found in the {@link #ColorBars} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name co.corb.carputerioio:bar_pointer_halo_radius
+        */
+        public static final int ColorBars_bar_pointer_halo_radius = 3;
+        /**
+          <p>This symbol is the offset where the {@link co.corb.carputerioio.R.attr#bar_pointer_radius}
+          attribute's value can be found in the {@link #ColorBars} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name co.corb.carputerioio:bar_pointer_radius
+        */
+        public static final int ColorBars_bar_pointer_radius = 2;
+        /**
+          <p>This symbol is the offset where the {@link co.corb.carputerioio.R.attr#bar_thickness}
+          attribute's value can be found in the {@link #ColorBars} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name co.corb.carputerioio:bar_thickness
+        */
+        public static final int ColorBars_bar_thickness = 0;
+        /** Attributes that can be used with a ColorPicker.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #ColorPicker_color_center_halo_radius co.corb.carputerioio:color_center_halo_radius}</code></td><td></td></tr>
+           <tr><td><code>{@link #ColorPicker_color_center_radius co.corb.carputerioio:color_center_radius}</code></td><td></td></tr>
+           <tr><td><code>{@link #ColorPicker_color_pointer_halo_radius co.corb.carputerioio:color_pointer_halo_radius}</code></td><td></td></tr>
+           <tr><td><code>{@link #ColorPicker_color_pointer_radius co.corb.carputerioio:color_pointer_radius}</code></td><td></td></tr>
+           <tr><td><code>{@link #ColorPicker_color_wheel_radius co.corb.carputerioio:color_wheel_radius}</code></td><td></td></tr>
+           <tr><td><code>{@link #ColorPicker_color_wheel_thickness co.corb.carputerioio:color_wheel_thickness}</code></td><td></td></tr>
+           </table>
+           @see #ColorPicker_color_center_halo_radius
+           @see #ColorPicker_color_center_radius
+           @see #ColorPicker_color_pointer_halo_radius
+           @see #ColorPicker_color_pointer_radius
+           @see #ColorPicker_color_wheel_radius
+           @see #ColorPicker_color_wheel_thickness
+         */
+        public static final int[] ColorPicker = {
+            0x7f010000, 0x7f010001, 0x7f010002, 0x7f010003,
+            0x7f010004, 0x7f010005
+        };
+        /**
+          <p>This symbol is the offset where the {@link co.corb.carputerioio.R.attr#color_center_halo_radius}
+          attribute's value can be found in the {@link #ColorPicker} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name co.corb.carputerioio:color_center_halo_radius
+        */
+        public static final int ColorPicker_color_center_halo_radius = 3;
+        /**
+          <p>This symbol is the offset where the {@link co.corb.carputerioio.R.attr#color_center_radius}
+          attribute's value can be found in the {@link #ColorPicker} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name co.corb.carputerioio:color_center_radius
+        */
+        public static final int ColorPicker_color_center_radius = 2;
+        /**
+          <p>This symbol is the offset where the {@link co.corb.carputerioio.R.attr#color_pointer_halo_radius}
+          attribute's value can be found in the {@link #ColorPicker} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name co.corb.carputerioio:color_pointer_halo_radius
+        */
+        public static final int ColorPicker_color_pointer_halo_radius = 5;
+        /**
+          <p>This symbol is the offset where the {@link co.corb.carputerioio.R.attr#color_pointer_radius}
+          attribute's value can be found in the {@link #ColorPicker} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name co.corb.carputerioio:color_pointer_radius
+        */
+        public static final int ColorPicker_color_pointer_radius = 4;
+        /**
+          <p>This symbol is the offset where the {@link co.corb.carputerioio.R.attr#color_wheel_radius}
+          attribute's value can be found in the {@link #ColorPicker} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name co.corb.carputerioio:color_wheel_radius
+        */
+        public static final int ColorPicker_color_wheel_radius = 0;
+        /**
+          <p>This symbol is the offset where the {@link co.corb.carputerioio.R.attr#color_wheel_thickness}
+          attribute's value can be found in the {@link #ColorPicker} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name co.corb.carputerioio:color_wheel_thickness
+        */
+        public static final int ColorPicker_color_wheel_thickness = 1;
+    };
 }
